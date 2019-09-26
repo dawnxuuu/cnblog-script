@@ -5,14 +5,13 @@
 
       if(mainContent.length < 1) return;
       
-      if(h1_list.length>0)
-      {
+      if(h1_list.length>0) {
           var content = '<a name="_labelTop"></a>';
           content += '<div id="navCategory">';
           content += '<p style="font-size:18px"><b>目录</b></p>';
           content += '<ul>';
-          for(var i=0; i<h1_list.length; i++)
-          {
+
+          for(var i=0; i<h1_list.length; i++) {
               var go_to_top = '<div style="text-align:right;color:#a5a593;font-weight:bold;font-size:16px"><a href="#_labelTop">⤴️</a><a name="_label' + i + '"></a></div>';
               $(h1_list[i]).before(go_to_top);
               
@@ -35,17 +34,18 @@
                   li1_content = '<li><a href="#_label' + i + '">' + $(h1_list[i]).text() + '</a></li>';
               content += li1_content;
           }
+
           content += '</ul>';
           content += '</div><p>&nbsp;</p>';
           content += '<p style="font-size:18px"><b>正文</b></p>';
-          if($('#cnblogs_post_body').length != 0 )
-          {
-              $($('#cnblogs_post_body')[0]).prepend(content);
+
+          if($('#cnblogs_post_body').length != 0 ) {
+            $($('#cnblogs_post_body')[0]).prepend(content);
           }
       }   
 
-      var qqinfo =  '<p style="color:navy;font-size:12px">讨论QQ群：135202158</p>';
-      $(mainContent[0]).prepend(qqinfo);
+    //   var qqinfo =  '<p style="color:navy;font-size:12px"></p>';
+    //   $(mainContent[0]).prepend(qqinfo);
   }
 
   GenerateContentList();
