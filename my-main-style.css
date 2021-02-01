@@ -1,0 +1,174 @@
+/*首页 S*/
+
+/* 字体加粗 右对齐 */
+#content > .post h2 {
+    font-size: 22px;
+}
+
+  /* 文章分类列表页标题 */
+#content > .post h5 {
+    font-size: 22px;
+}
+
+  /* 去除border */
+#content .post {
+    border: none;
+}
+  /*隐藏右上角日期*/
+#content p.date {
+    display: none;
+}
+  /*摘要字体变细*/
+#content .post .postbody .c_b_p_desc {
+    font-weight: 300;
+}
+  /*发布信息颜色变浅*/
+.post .postfoot {
+    color: d8d8d8;
+}
+  /*底部下一页居中*/
+.topicListFooter {
+    text-align: center;
+    margin-right: 10px;
+    margin-top: 10px;
+    font-size: 16px;
+}
+/*首页 E*/
+
+/* 文章内容页 S*/
+/*文章背景色*/
+#post_detail {
+    background-color: #f5f5d5;
+}
+  /*大标题字体 */
+#content #post_detail .post h2 a { 
+    font-family: Georgia, serif;
+    font-size: 28px;
+}
+  /*主要内容字体*/
+#cnblogs_post_body p {
+    font-family: Georgia, serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #242424;
+    line-height: 1.4;
+    margin: 15px 0;
+    text-indent: 2em;
+}
+  /*各级标题字体 S*/
+#cnblogs_post_body h1,
+#cnblogs_post_body h2,
+#cnblogs_post_body h3,
+#cnblogs_post_body h4,
+#cnblogs_post_body h5,
+#cnblogs_post_body h6 {
+    font-weight: bold;
+    font-family: Georgia, serif;
+    line-height: 1.5;
+    margin: 10px 0;
+    padding: 0;
+    border: none;
+}
+#cnblogs_post_body h1 {
+    font-size: 25px;
+}
+#cnblogs_post_body h2 {
+    font-size: 21px;
+}
+#cnblogs_post_body h3 {
+    font-size: 18px;
+}
+#cnblogs_post_body h4 {
+    font-size: 16px;
+}
+#cnblogs_post_body h5 {
+    font-size: 16px;
+}
+#cnblogs_post_body h5::before {
+    content: '➤';
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 6px;
+}
+#cnblogs_post_body h6 {
+    font-size: 16px;
+}
+#cnblogs_post_body h6::before {
+    content: '◉';
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 6px;
+}
+  /*各级标题字体 E*/
+
+  /*布局 S*/
+#leftmenu {
+  float: right;
+}
+#main_content {
+  float: left;
+  margin-left: -196px;
+}
+  /*布局 E*/
+  /*文章最后的分割线*/
+#MySignature {
+    display: block;
+    border-bottom: 3px solid #d9d6ca;
+    width: 985px;
+    position: relative;
+    left: -20px;
+    margin-top: 130px;
+}
+  /*分享模块隐藏
+#blog_post_info {
+    display: none;
+}
+  */
+  /*评论区宽度*/
+#blog-comments-placeholder {
+  width: 50%;
+}
+  /*评论区边框*/
+#comments {
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    border-right-width: 2px;
+}
+  /*评论区底部多余空隙*/
+#comments .post {
+  margin-bottom: 0px;
+}
+  /*隐藏投票评论*/
+#comments .post .comment_vote {
+  display: none;
+}
+  /*评论区重置字体*/
+#comments .post h2 {
+  font-size: 12px;
+}
+  /*评论区输入框*/
+.commentbox_main #tbCommentBody {
+  width: 443px;
+  height: 50px;
+}
+
+/* 隐藏广告
+#ad_t2, #cnblogs_c1, #cnblogs_c2, #under_post_news,  #under_post_kb, .postDesc, #lnk_RefreshComments, #comment_nav {
+  display: none;
+}
+*/
+
+/* 代码块 S */
+.cnblogs_code pre {
+  font-size: 12px!important;
+}
+.cnblogs_code pre span, .cnblogs-markdown .hljs, .cnblogs-post-body .hljs {
+  font-size: 14px!important;
+  line-height: 14px!important;
+}
+pre {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+/* 代码块 E */
+/* 文章内容页 E*/
