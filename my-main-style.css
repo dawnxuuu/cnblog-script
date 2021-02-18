@@ -128,10 +128,9 @@
     #MySignature {
       display: block;
       border-bottom: 3px solid #d9d6ca;
-      width: 985px;
       position: relative;
-      left: -20px;
-      margin-top: 130px;
+      left: -10px;
+      margin-top: 40px;
     }
   /* 评论区宽度 */
     #blog-comments-placeholder {
